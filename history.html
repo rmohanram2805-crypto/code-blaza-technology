@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking History | CODE BLAZA TECHNOLOGY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="history">
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-programming-1600/1080p.mp4" type="video/mp4">
+  </video>
+  <div class="bg-gradient"></div>
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-cube"></div>
+      <div class="logo-title">CODE BLAZA TECHNOLOGY</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="booking.html">Booking</a>
+      <a href="history.html" class="active">History</a>
+      <a href="uploads.html">Uploads</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page">
+    <div class="page-hero">
+      <h1>Student Booking & Registration History</h1>
+      <p>All submitted bookings are stored in your browser for review. Export or revisit anytime.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><strong>Total bookings</strong><br><span id="statTotal">0</span></div>
+      <div class="stat"><strong>Python</strong><br><span id="statPython">0</span></div>
+      <div class="stat"><strong>Java</strong><br><span id="statJava">0</span></div>
+      <div class="stat"><strong>Python DSA</strong><br><span id="statDsa">0</span></div>
+    </div>
+
+    <div class="card">
+      <div class="hero-actions" style="margin:0 0 10px 0;">
+        <a class="btn primary" href="booking.html">Add Booking</a>
+        <button class="btn ghost" id="exportCsv">Export CSV</button>
+        <button class="btn ghost" id="clearHistory">Clear History</button>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Start</th>
+            <th>Uploaded Form</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="historyBody" class="history-table-body">
+          <tr><td colspan="5">No bookings yet. Submit one from the Booking page.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div>CODE BLAZA TECHNOLOGY — CEO: Mr. PRABHU.R</div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="courses.html">Courses</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

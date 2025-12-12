@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | CODE BLAZA TECHNOLOGY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="booking">
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-programming-1600/1080p.mp4" type="video/mp4">
+  </video>
+  <div class="bg-gradient"></div>
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-cube"></div>
+      <div class="logo-title">CODE BLAZA TECHNOLOGY</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="instructors.html">Instructors</a>
+      <a href="booking.html" class="active">Booking</a>
+      <a href="history.html">History</a>
+      <a href="uploads.html">Uploads</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page">
+    <div class="page-hero">
+      <div class="ad-banner">PROJECT PROVIDED · Certificates · ₹350 / month</div>
+      <h1>Book Your Course</h1>
+      <p>Register for Python, Java, or Python DSA. Upload your education form, confirm your seat, and your booking will appear in history instantly.</p>
+    </div>
+
+    <div class="card">
+      <form id="bookingForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input class="input" id="fullName" name="fullName" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input class="input" type="tel" id="phone" name="phone" required placeholder="+91 90000 00000">
+          </div>
+          <div class="field">
+            <label for="course">Course</label>
+            <select class="input" id="course" name="course" required>
+              <option value="">Choose a course</option>
+              <option value="Python">Python — ₹350 / month</option>
+              <option value="Java">Java — ₹350 / month</option>
+              <option value="Python DSA">Python DSA — ₹350 / month</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="startDate">Preferred start date</label>
+            <input class="input" type="date" id="startDate" name="startDate" required>
+          </div>
+          <div class="field">
+            <label for="notes">Notes</label>
+            <textarea class="input" id="notes" name="notes" rows="3" placeholder="Any goals or questions?"></textarea>
+          </div>
+          <div class="field">
+            <label for="educationForm">Upload education form (PDF/Image)</label>
+            <div class="upload-box">
+              <input class="input" type="file" id="educationForm" name="educationForm" accept=".pdf,.jpg,.jpeg,.png">
+              <small class="muted">Files are kept in your browser only for this demo; no server upload.</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-actions" style="margin-top:16px;">
+          <button class="btn primary" type="submit">Submit Booking</button>
+          <a class="btn ghost" href="history.html">Go to History</a>
+        </div>
+        <p class="notice" id="bookingNotice" style="display:none;">Booking saved! Check the History page to review and download your record.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div>CODE BLAZA TECHNOLOGY — CEO: Mr. PRABHU.R</div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="courses.html">Courses</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
